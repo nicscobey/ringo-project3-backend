@@ -88,6 +88,17 @@ app.get('/api/my/decks', async (req, res) => {
     }
 })
 
+//  Index Route - get request to /api/my/card gets us all the card
+app.get('/api/my/card', async (req, res) => {
+    try {
+        //  Send all decks
+        res.json(await Card.find({}))
+    } catch(error) {
+        //  send error
+        res.status(400).json({error})
+    }
+})
+
 //  Create Route - Post request to /api/my/decks creates a deck from json body
 app.post("/api/my/decks", async (req, res) => {
     try{

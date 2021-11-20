@@ -42,7 +42,7 @@ const cardSchema = new mongoose.Schema(
           definition: {type: String, required: true},
           example: String,
           deckTag: {type: String, required: true},
-          deckId: {type: Number, required: true}
+          deckId: {type: String, required: true}
     }
   );
   

@@ -95,7 +95,7 @@ app.use(cookieParser())
 //  Routes and Routers
 ////////////////////////
 app.get('/', (req, res) => {
-    res.send('DICTIONARY APP!!')
+    res.send('FLASHCARDS APP - Nic test!!')
 })
 
 //  Signup Route - Post request to /api/signup allows a user to be created and stored 
